@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "node src/console-server.mjs",
     "start": "node src/console-server.mjs",
+    "local": "bash ./start.command",
     "daemon:start": "pm2 start ecosystem.config.cjs",
     "daemon:restart": "pm2 restart tosub2 --update-env",
     "daemon:stop": "pm2 stop tosub2",

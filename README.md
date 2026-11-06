@@ -54,6 +54,18 @@ python -m pip install -r requirements.txt
 npm run dev
 ```
 
+### macOS 一键启动
+
+已安装 Node.js 依赖，并在 `tmp/venv` 准备好包含 `curl_cffi` 的 Python 3.10 或以上虚拟环境后，可以双击项目根目录的 `start.command`，或在项目目录运行：
+
+```bash
+npm run local
+```
+
+脚本自动使用项目的 `tmp/venv/bin/python`，服务就绪后打开浏览器。已有本项目服务运行时直接打开现有控制台；其他程序占用端口时提示退出。新启动的服务在终端前台运行，按 `Ctrl+C` 停止。
+
+需要使用其他解释器或端口时，可设置 `TOSUB2_PYTHON`、`ONBOARDING_PORT`。设置 `TOSUB2_OPEN_BROWSER=0` 可关闭自动打开浏览器。
+
 默认访问地址：
 
 ```text
